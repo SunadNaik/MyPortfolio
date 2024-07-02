@@ -24,29 +24,37 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<style>
-	.social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .social-icons a {
-    display: block;
-    text-decoration: none;
-    background-color: #333;
-    color: rgb(236, 229, 229);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 18px;
-    margin-bottom: 10px; /* spacing between icons */
-  }
-  
-  .social-icons a:hover {
-    background-color: #555;
-  }
+	/* Styles for social icons and move to top button */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  display: block;
+  text-decoration: none;
+  background-color: #333;
+  color: rgb(236, 229, 229);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-bottom: 10px; /* spacing between icons */
+}
+
+.social-icons a:hover {
+  background-color: #0d36c8;
+
+}
+
+#move-to-top {
+  display: block; /* Ensure move to top icon is always visible */
+}
+
 	</style>
 </head>
 
@@ -148,7 +156,7 @@
 					<div class="block-18 shadow">
 						<div class="text">
 							<strong class="number" data-number="5">0</strong>
-							<span>Years spent on coding.</span>
+							<span>Years spent on coding</span>
 						</div>
 					</div>
 				</div>
@@ -485,9 +493,10 @@
 									<h2>Pet Store</h2>
 									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
 											class="btn btn-outline-secondary"
-											href="">Github</a>&nbsp;<a
+											href="https://github.com/SunadNaik/Pet-Store">Github</a>&nbsp;
+											<!-- <a
 											class="btn btn-outline-secondary" target="_blank"
-											href="">Link</a>
+											href="">Link</a> -->
 									</div>
 								</div>
 								<span class="position"></span>
@@ -501,8 +510,14 @@
 								<span class="">👨‍💻</span>
 							</div>
 							<div class="text pl-3">
+								<div class="d-flex">
 								<span class="date"></span>
 								<h2>The Fitness Arena</h2>
+								<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
+									class="btn btn-outline-secondary"
+									href="https://github.com/SunadNaik/Fitness_Arena">Github</a>&nbsp;
+							</div>
+						</div>
 								<span class="position"></span>
 								<p>The above fitness app was developed using AngularJS for the front-end, integrated with Node.js and Express for the backend services, MongoDB for data storage.</p>
 							</div>
@@ -514,6 +529,7 @@
 							<div class="text pl-3">
 								<span class="date">2024</span>
 								<h2>Library-Management-system</h2>
+								
 								<span class="position"></span>
 								<p>Library Management System is developed using HTML, CSS, JS as front end and PHP, MySQL as back end..</p>
 							</div>
@@ -623,7 +639,7 @@
 			<div class="row d-flex">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+						<a  class="block-20" style="background-image: url('images/full.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading"><a href="">FullStack Website</a>
@@ -643,7 +659,7 @@
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+						<a  class="block-20" style="background-image: url('images/port.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading"><a href="">Portfolio Website</a>
@@ -667,7 +683,7 @@
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+						<a  class="block-20" style="background-image: url('images/mob.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading"><a href="">Mobile Application Development</a>
@@ -716,7 +732,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Address</h3>
-							<p>Bengalore</p>
+							<p><a href="https://www.bing.com/maps?osid=085878cc-bc80-45d0-a59a-b5dce2f7218c&cp=13.006383~77.636107&lvl=15.61&pi=0&imgid=2c939cdb-b8cd-4d6f-8373-f8640cb1b638&v=2&sV=2&form=S00027">Bengalore</a></p>
 						</div>
 					</div>
 				</div>
@@ -749,7 +765,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Website</h3>
-							<p><a href="https://www.linkedin.com/in/sunad-naik-a04227222/">sunadnaik</a></p>
+							<p><a href="https://sunadnaik.onrender.com/">sunadnaik</a></p>
 						</div>
 					</div>
 				</div>
@@ -760,14 +776,14 @@
 
 
 	
-		<div class="social-icons">
-		  
-		  <a target="_blank" href="https://github.com/SunadNaik"><i class="fab fa-github"></i> </a>
-		  <a target="_blank" href="https://www.instagram.com/sunad__?igsh=OW41MjFlZjRhN2M="><i class="fab fa-instagram"></i> </a>
-		  <a target="_blank" href="https://www.linkedin.com/in/sunad-naik-a04227222/"><i class="fab fa-linkedin-in"></i></a>
-		  
-		</div>
-	
+	<div class="social-icons"> 
+	<a target="_blank" href="https://github.com/SunadNaik"><i class="fab fa-github"></i></a>
+	<a target="_blank" href="https://www.instagram.com/sunad__?igsh=OW41MjFlZjRhN2M="><i class="fab fa-instagram"></i></a>
+	<a target="_blank" href="https://www.linkedin.com/in/sunad-naik-a04227222/"><i class="fab fa-linkedin-in"></i></a>
+	<a  onclick="moveToTop()"><i class="fas fa-arrow-up"></i></a>
+
+  </div>
+  <script src="script.js"></script>
 
 
 	<footer class="ftco-footer ftco-section">
